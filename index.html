@@ -21,6 +21,18 @@ h1
   height:250px;
   float:left;
 }*/
+#div1
+{
+  background-color: #d3d3d3;
+}
+#div2
+{
+  background-color: #838383;
+}
+#div3
+{
+  background-color: #696969;
+}
 .row {
   width: 100%;
 }
@@ -31,7 +43,7 @@ h1
     border: 1px solid black;
     padding: 5px;
     margin: 5px;
-    width:90%;
+    width:  100%;
   }
   .col-lg-1 {
     width: 8.33%;
@@ -43,8 +55,8 @@ h1
     width: 25%;
   }
   .col-lg-4 {
-    width: 33.33%;
-    background-color: #939393;
+    width: 32%;
+    /*background-color: #939393;*/
   }
   .col-lg-5 {
     width: 41.66%;
@@ -72,10 +84,91 @@ h1
   }
 }
 
+
 /***********Medium Devices only ******/
 @media (min-width: 768px) and (max-width: 991px)
 {
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    width:  100%;
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 32%;
+    
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 48%;
+    /*background-color: #d3d3d3;*/
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 98%;
+    /*background-color: #939393;*/
+  }
+}
 
+/***** Small Devices  ****/
+@media (min-width: 1px) and  (max-width: 767px)
+{
+.col-sm-12 {
+    float: left;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    /*width:  100%;*/
+  }
+   
+}
+#Chicken
+{
+  float:right;
+  background-color: red;
+  border: 1px solid black;
+}
+#Beef
+{
+  float:right;
+  background-color: green;
+  border: 1px solid black;
+}
+#Sushi
+{
+  float:right;
+  background-color: cyan;
+  border: 1px solid black;
+}
+section
+{
+  clear: both;
 }
 </style>
 </head>
@@ -83,18 +176,28 @@ h1
 
 <h1>Assignment Module 2</h1>
 <div class="row">
-<div class="col-lg-4">
-<p>Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It's also called placeholder (or filler) text. It's a convenient tool for mock-ups. It helps to outline the visual elements of a document or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by the classical author and philosopher Cicero.  
-</p>
-</div>
-<div class="col-lg-4">
-<p>Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It's also called placeholder (or filler) text. It's a convenient tool for mock-ups. It helps to outline the visual elements of a document or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by the classical author and philosopher Cicero. 
+<div id="div1" class="col-lg-4 col-md-6 col-sm-12">
+<div id="Chicken">Chicken</div>
 
-</p>
+<section>
+
+Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It's also called placeholder (or filler) text. It's a convenient tool for mock-ups. It helps to outline the visual elements of a document or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by the classical author and philosopher Cicero.  
+</section>
 </div>
-<div class="col-lg-4">
-<p>Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It's also called placeholder (or filler) text. It's a convenient tool for mock-ups. It helps to outline the visual elements of a document or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by the classical author and philosopher Cicero. 
-</p>
+<div id="div2" class="col-lg-4 col-md-6 col-sm-12">
+<div id="Beef">Beef</div>
+<section>
+
+Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It's also called placeholder (or filler) text. It's a convenient tool for mock-ups. It helps to outline the visual elements of a document or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by the classical author and philosopher Cicero. 
+
+</section>
+</div>
+<div id="div3" class="col-lg-4 col-md-12 col-sm-12">
+<div id="Sushi">Sushi</div>
+<section>
+
+Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It's also called placeholder (or filler) text. It's a convenient tool for mock-ups. It helps to outline the visual elements of a document or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by the classical author and philosopher Cicero. 
+</section>
 </div>
 </div>
 </body>
